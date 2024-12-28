@@ -1,3 +1,4 @@
 # firstproject
-this is my very first python code i wrote for fun
-type start to initiate
+this were my very first projects that i wrote using python as my main language, hope you like it!
+instructions:
+first project:type start to initiate
