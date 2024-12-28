@@ -1,29 +1,26 @@
 import pyttsx3
 import pygame
 import sys
-
+#every mentioning of pygame in the code was a failed attempt to give the robot a cute fac
 pygame.init()
 screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("robotto")
 
     
 
-# Initialize the TTS engine
 engine = pyttsx3.init()
 
-# Get and set the properties
-rate = engine.getProperty('rate')   # Get the current speaking rate
-engine.setProperty('rate', 100)     # Set the new speaking rate
+rate = engine.getProperty('rate')
+engine.setProperty('rate', 100)
 
-voices = engine.getProperty('voices')  # Get the available voices
-engine.setProperty('voice', voices[2].id)  # Set the voice (0 for male, 1 for female)
+voices = engine.getProperty('voices')  
+engine.setProperty('voice', voices[2].id)  
 
-# Define a function to convert text to speech
 def speak(text):
     engine.say(text)
     engine.runAndWait()
 
-# Example usage
+
 speak("Hello, how are you doing today?")
 def function():
     while True:
@@ -34,8 +31,6 @@ function()
 
 
 
-
-# Main loop
 def main():
     running = True
     while running:
